@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: 'Helvetica Neue', Arial, sans-serif; -webkit-font-smoothing: antialiased; }
+.post {
+  width: 1080px; height: 1350px;
+  background: #E30613; position: relative; overflow: hidden;
+}
+.stripes {
+  position: absolute; top: 0; left: 0; right: 0; bottom: 0;
+  background-image: repeating-linear-gradient(
+    45deg, transparent, transparent 30px,
+    rgba(184,5,15,0.3) 30px, rgba(184,5,15,0.3) 32px
+  );
+}
+.flash-badge {
+  position: absolute; top: 40px; right: -50px;
+  background: #1A1A1A; color: #fff;
+  padding: 14px 80px; font-size: 16px; font-weight: 800;
+  transform: rotate(30deg); letter-spacing: 3px;
+}
+.center-content {
+  position: absolute; top: 50%; left: 50%;
+  transform: translate(-50%, -50%); text-align: center; width: 85%;
+}
+.pre-title {
+  font-size: 18px; color: #fff; letter-spacing: 4px;
+  font-weight: 600; opacity: 0.85;
+}
+.big-number {
+  font-size: 120px; color: #fff; font-weight: 900;
+  line-height: 0.9; margin: 16px 0;
+  text-shadow: 3px 3px 0 rgba(0,0,0,0.2);
+}
+.label {
+  font-size: 40px; color: #fff; font-weight: 800; letter-spacing: 6px;
+}
+.detail-box {
+  display: inline-block; margin-top: 30px; padding: 3px;
+  background: #fff;
+}
+.detail-box-inner {
+  padding: 14px 30px; border: 3px solid #E30613;
+}
+.detail-box-inner span {
+  font-size: 18px; color: #E30613; font-weight: 800; letter-spacing: 2px;
+}
+.bottom-bar {
+  position: absolute; bottom: 0; left: 0; right: 0;
+  height: 90px; background: #1A1A1A;
+  display: flex; align-items: center; justify-content: center; gap: 30px;
+}
+.bottom-bar .name {
+  color: #C0C0C0; font-size: 18px; font-weight: 700; letter-spacing: 4px;
+}
+.bottom-bar .location {
+  color: #8A8A8A; font-size: 16px;
+}
+</style>
+</head>
+<body>
+<div class="post">
+  <div class="stripes"></div>
+
+  <!-- EDITAR: Texto do badge diagonal (OFERTA, BLACK FRIDAY, QUEIMA, etc) -->
+  <div class="flash-badge">OFERTA</div>
+
+  <div class="center-content">
+    <!-- EDITAR: Linha de urgência -->
+    <p class="pre-title">SOMENTE ESTA SEMANA</p>
+
+    <!-- EDITAR: Percentual ou valor de desconto -->
+    <div class="big-number">30%</div>
+    <p class="label">DE DESCONTO</p>
+
+    <!-- EDITAR: Detalhe da promoção -->
+    <div class="detail-box">
+      <div class="detail-box-inner">
+        <span>ACESSÓRIOS SELECIONADOS</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="bottom-bar">
+    <span class="name">BIKE PORTELLA</span>
+    <!-- EDITAR: Localização -->
+    <span class="location">📍 Curitiba</span>
+  </div>
+</div>
+</body>
+</html>

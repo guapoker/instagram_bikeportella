@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: 'Helvetica Neue', Arial, sans-serif; -webkit-font-smoothing: antialiased; }
+.post {
+  width: 1080px; height: 1350px;
+  background: #1A1A1A; position: relative; overflow: hidden;
+}
+.accent-bar { height: 8px; background: #E30613; width: 100%; }
+.dot-pattern {
+  position: absolute; top: 0; left: 0; right: 0; bottom: 0;
+  background-image: radial-gradient(circle at 2px 2px, #404040 1px, transparent 0);
+  background-size: 30px 30px; opacity: 0.3;
+}
+.tag {
+  position: absolute; top: 50px; left: 50px;
+  background: #E30613; color: #fff;
+  padding: 10px 24px; font-size: 16px; font-weight: 700;
+  letter-spacing: 3px; text-transform: uppercase;
+}
+.icon-circle {
+  position: absolute; top: 50%; left: 50%;
+  transform: translate(-50%, -60%);
+  width: 200px; height: 200px; border-radius: 50%;
+  border: 4px solid #E30613;
+  display: flex; align-items: center; justify-content: center;
+  background: rgba(227,6,19,0.08);
+  overflow: hidden;
+}
+.icon-circle img {
+  width: 100%; height: 100%; object-fit: cover;
+}
+.title-block {
+  position: absolute; bottom: 200px; left: 50px; right: 50px;
+  text-align: center;
+}
+.title-block h1 {
+  color: #fff; font-size: 48px; font-weight: 800;
+  text-transform: uppercase; letter-spacing: 2px; line-height: 1.2;
+}
+.title-block h1 .highlight { color: #E30613; }
+.title-block .swipe {
+  color: #8A8A8A; font-size: 18px; margin-top: 16px; letter-spacing: 2px;
+}
+.logo-area {
+  position: absolute; bottom: 40px; left: 0; right: 0; text-align: center;
+}
+.logo-area .name {
+  color: #C0C0C0; font-size: 18px; font-weight: 700; letter-spacing: 5px;
+  border-top: 1px solid #404040; display: inline-block; padding-top: 16px;
+}
+.logo-area .since {
+  color: #8A8A8A; font-size: 12px; letter-spacing: 2px; margin-top: 4px;
+  display: block;
+}
+.dots {
+  position: absolute; bottom: 140px; left: 50%;
+  transform: translateX(-50%); display: flex; gap: 10px;
+}
+.dot { width: 10px; height: 10px; border-radius: 5px; background: #404040; }
+.dot.active { width: 30px; background: #E30613; }
+</style>
+</head>
+<body>
+<div class="post">
+  <div class="accent-bar"></div>
+  <div class="dot-pattern"></div>
+
+  <!-- EDITAR: Texto da tag (ex: DICA MECÂNICA, MANUTENÇÃO, SEGURANÇA) -->
+  <div class="tag">DICA MECÂNICA</div>
+
+  <!-- EDITAR: Substituir por imagem do Gemini ou ícone representativo -->
+  <div class="icon-circle">
+    <span style="font-size: 80px;">⚙️</span>
+    <!-- Ou usar imagem: <img src="./images/nome.png" /> -->
+  </div>
+
+  <div class="title-block">
+    <!-- EDITAR: Título do carrossel. Usar <span class="highlight"> para destaque vermelho -->
+    <h1>Como Regular o<br><span class="highlight">Câmbio Traseiro</span></h1>
+    <p class="swipe">DESLIZE PARA O PASSO A PASSO →</p>
+  </div>
+
+  <!-- EDITAR: Ajustar quantidade de dots conforme número de slides -->
+  <div class="dots">
+    <div class="dot active"></div>
+    <div class="dot"></div>
+    <div class="dot"></div>
+    <div class="dot"></div>
+    <div class="dot"></div>
+  </div>
+
+  <div class="logo-area">
+    <!-- EDITAR: Substituir por <img src="./logo.png"> se disponível -->
+    <span class="name">BIKE PORTELLA</span>
+    <span class="since">DESDE 1975</span>
+  </div>
+</div>
+</body>
+</html>

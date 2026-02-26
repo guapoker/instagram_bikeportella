@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: 'Helvetica Neue', Arial, sans-serif; -webkit-font-smoothing: antialiased; }
+.post {
+  width: 1080px; height: 1350px;
+  background: #FFFFFF; position: relative; overflow: hidden;
+}
+.accent-bar { height: 8px; background: #E30613; width: 100%; }
+.step-header {
+  position: absolute; top: 50px; left: 50px;
+  display: flex; align-items: center; gap: 20px;
+}
+.step-number {
+  width: 70px; height: 70px; border-radius: 50%;
+  background: #E30613; color: #fff;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 32px; font-weight: 800;
+}
+.step-meta .label {
+  font-size: 14px; color: #8A8A8A; letter-spacing: 3px; font-weight: 600;
+}
+.step-meta .title {
+  font-size: 26px; color: #1A1A1A; font-weight: 700; margin-top: 4px;
+}
+.image-area {
+  position: absolute; top: 160px; left: 50px; right: 50px;
+  height: 550px; border-radius: 12px; overflow: hidden;
+  background: #E8E8E8;
+}
+.image-area img { width: 100%; height: 100%; object-fit: cover; }
+.image-placeholder {
+  width: 100%; height: 100%;
+  display: flex; align-items: center; justify-content: center;
+  flex-direction: column; color: #8A8A8A;
+}
+.image-placeholder span { font-size: 60px; }
+.image-placeholder p { font-size: 14px; margin-top: 10px; }
+.description {
+  position: absolute; bottom: 140px; left: 50px; right: 50px;
+  font-size: 22px; line-height: 1.6; color: #1A1A1A;
+  border-left: 5px solid #E30613; padding-left: 20px;
+}
+.bottom-bar {
+  position: absolute; bottom: 0; left: 0; right: 0;
+  height: 90px; background: #1A1A1A;
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 0 50px;
+}
+.bottom-bar .name {
+  color: #C0C0C0; font-size: 18px; font-weight: 700; letter-spacing: 5px;
+}
+.bottom-bar .dots { display: flex; gap: 10px; }
+.dot { width: 10px; height: 10px; border-radius: 5px; background: #404040; }
+.dot.active { width: 30px; background: #E30613; }
+</style>
+</head>
+<body>
+<div class="post">
+  <div class="accent-bar"></div>
+
+  <div class="step-header">
+    <!-- EDITAR: Número do passo -->
+    <div class="step-number">1</div>
+    <div class="step-meta">
+      <div class="label">PASSO</div>
+      <!-- EDITAR: Título do passo -->
+      <div class="title">Identifique o Problema</div>
+    </div>
+  </div>
+
+  <div class="image-area">
+    <!-- EDITAR: Substituir placeholder pela imagem do Gemini -->
+    <div class="image-placeholder">
+      <span>📸</span>
+      <p>Inserir imagem do Gemini aqui</p>
+    </div>
+    <!-- <img src="./images/passo-1.png" /> -->
+  </div>
+
+  <!-- EDITAR: Descrição do passo (2-3 linhas, objetivo e direto) -->
+  <div class="description">
+    Observe se a corrente está pulando entre as marchas
+    ou fazendo barulho ao pedalar. Isso indica desalinhamento
+    do câmbio traseiro.
+  </div>
+
+  <div class="bottom-bar">
+    <span class="name">BIKE PORTELLA</span>
+    <!-- EDITAR: Ajustar dot ativo conforme número do slide -->
+    <div class="dots">
+      <div class="dot"></div>
+      <div class="dot active"></div>
+      <div class="dot"></div>
+      <div class="dot"></div>
+      <div class="dot"></div>
+    </div>
+  </div>
+</div>
+</body>
+</html>

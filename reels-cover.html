@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: 'Helvetica Neue', Arial, sans-serif; -webkit-font-smoothing: antialiased; }
+.post {
+  width: 1080px; height: 1920px;
+  background: linear-gradient(180deg, #000 0%, #2D2D2D 50%, #000 100%);
+  position: relative; overflow: hidden;
+}
+.red-line {
+  position: absolute; left: 0; top: 0; bottom: 0;
+  width: 6px; background: #E30613;
+}
+.tag {
+  position: absolute; top: 60px; left: 60px;
+  background: #E30613; color: #fff;
+  padding: 10px 24px; font-size: 16px; font-weight: 700; letter-spacing: 3px;
+}
+.play-circle {
+  position: absolute; top: 35%; left: 50%;
+  transform: translate(-50%, -50%);
+  width: 160px; height: 160px; border-radius: 50%;
+  border: 3px solid rgba(255,255,255,0.25);
+  display: flex; align-items: center; justify-content: center;
+}
+.play-triangle {
+  width: 0; height: 0;
+  border-left: 45px solid #fff;
+  border-top: 28px solid transparent;
+  border-bottom: 28px solid transparent;
+  margin-left: 12px;
+}
+.bg-image {
+  position: absolute; top: 0; left: 0; right: 0; bottom: 0;
+  opacity: 0.3;
+}
+.bg-image img { width: 100%; height: 100%; object-fit: cover; }
+.title-block {
+  position: absolute; bottom: 280px; left: 60px; right: 60px;
+}
+.title-block h2 {
+  color: #fff; font-size: 52px; font-weight: 800;
+  text-transform: uppercase; line-height: 1.3;
+}
+.title-block h2 .highlight { color: #E30613; }
+.title-block .subtitle {
+  color: #C0C0C0; font-size: 22px; margin-top: 16px;
+}
+.logo {
+  position: absolute; bottom: 60px; left: 60px;
+  color: #C0C0C0; font-size: 16px; font-weight: 700; letter-spacing: 4px;
+}
+</style>
+</head>
+<body>
+<div class="post">
+  <!-- OPCIONAL: Imagem de fundo com opacidade baixa -->
+  <!--
+  <div class="bg-image">
+    <img src="./images/background.png" />
+  </div>
+  -->
+
+  <div class="red-line"></div>
+
+  <!-- EDITAR: Tag (REELS, DICA, REVIEW, etc) -->
+  <div class="tag">REELS</div>
+
+  <div class="play-circle">
+    <div class="play-triangle"></div>
+  </div>
+
+  <div class="title-block">
+    <!-- EDITAR: Título impactante. Usar <span class="highlight"> para destaque vermelho -->
+    <h2>3 Erros que<br><span class="highlight">Destroem</span> sua<br>Bateria E-Bike</h2>
+    <!-- EDITAR: Subtítulo -->
+    <p class="subtitle">Assista até o final 👆</p>
+  </div>
+
+  <div class="logo">BIKE PORTELLA</div>
+</div>
+</body>
+</html>
